@@ -91,10 +91,9 @@ form input::placeholder {
     padding: 10px 30px;
     cursor: pointer;
     font-weight: bold;
-
 }
 
-.btn-blue {
+.btn-white-cards {
     background-color: white;
     color: #152237;
     border: none;
@@ -132,34 +131,13 @@ h1 {
     color: #152237;
 }
 
-h2.hero {
-    font-family: 'Montserrat', sans-serif;
-    font-weight: 500;
-    font-size: 20px;
-    line-height: 1;
-    letter-spacing: -1.5%;
-    text-align: center;
-    text-transform: uppercase;
-}
-
-h2.cards-title-dark{
+.cards-title{
     font-family: 'Montserrat', sans-serif;
     font-weight: 800;
     font-size: 36px;
     line-height: 72px;
     letter-spacing: -1.5%;
     text-align: left;
-    padding: 40px 0;
-}
-
-.cards-title-light {
-    font-family: 'Montserrat', sans-serif;
-    font-weight: 800;
-    font-size: 36px;
-    line-height: 72px;
-    letter-spacing: -1.5%;
-    text-align: left;
-    padding: 20px 0;
 }
 
 h3 {
@@ -209,13 +187,13 @@ h4 {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(307px, 1fr));
     justify-items: start;
-    align-items: center;
+    align-items: start;
     width: 100%;
 
 }
 
 .card {
-  background-color: white;
+  background-color: none;
   width: 305px; 
   height: 362px;
   display: flex;
@@ -242,7 +220,6 @@ h4 {
   background-position: center;
   display: block;
   box-sizing: border-box;
-  overflow: hidden;
 }
 
 .price {
@@ -287,24 +264,15 @@ h4 {
   color: rgba(255, 215, 0, 0.6); 
 }
 
-.cards-section-light {
-    min-height: 530px;
-}
-
-.cards-section-dark {
-    min-height: 530px;
-    color: white;
-    background-color: #152237;
-}
-
-.cards-section-dark div{
-    color: #152237;
-}
-
-.cards-section-dark span{
-    color: white;
+.cards-section {
+    min-height: 632px;
 }
 
 .card-bottom {
     padding: 0px 0px 0px 5px;
+}
+
+.cards-dark {
+    background-color: #152237;
+    color: white;
 }
