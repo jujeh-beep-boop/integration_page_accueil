@@ -1,0 +1,123 @@
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.navbar {
+  position: relative;
+  background-color: #152237;
+  height: 80px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 80px;
+  box-sizing: border-box;
+  text-decoration: none;
+}
+
+a {
+  color: white;
+  text-decoration: none;
+}
+
+form {
+    background-color: #152237;
+    border: white 1px solid;
+    border-radius: 6px;
+    padding: 10px;
+    color: white;
+}
+
+form input {
+    background-color: #152237;
+    border: none;
+    color: white;
+    outline: none;
+}
+
+form input::placeholder {
+    color: white;
+}
+
+.search-icon {
+  background: none;
+  border: none;
+  color: white;
+  cursor: pointer;
+}
+
+.btn-white-nav {
+    background-color: white;
+    color: #152237;
+    border: none;
+    border-radius: 6px;
+    padding: 10px 20px;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.btn-green-to-blue {
+    background: linear-gradient(95.98deg, #44DD8A 8.7%, #15B7E2 100%);
+    color: white;
+    border: none;
+    border-radius: 6px;
+    padding: 10px 20px;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.btn-white-hero {
+    background-color: white;
+    color: #152237;
+    border: none;
+    border-radius: 6px;
+    padding: 15px 30px;
+    cursor: pointer;
+    font-weight: 500;
+    font-size: 15px;
+    letter-spacing: -1.5%;
+    line-height: 100%;
+    text-align: center;
+    margin-top: 20px;
+}
+
+.hero {
+  background: linear-gradient(94.01deg, rgba(68,221,138,0.8) 3.11%, rgba(21,183,226,0.8) 98.45%),
+              url("/images/pexels-polina-zimmerman-3747457%201.png") center/cover no-repeat;
+display: flex;
+flex-direction: column;
+align-items: center;
+justify-content: center;
+height: 451px;
+max-height: calc(100vh - 80px);
+text-align: center;
+padding: 0 20px;
+box-sizing: border-box;
+
+width: 100%;
+max-width: none; /* supprimer la limite */
+margin: 0;       /* retirer margin: auto */
+}
+
+h1 {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 800;
+    font-size: 48px;
+    line-height: 1;
+    letter-spacing: -1.5%;
+    text-align: center;
+    text-transform: uppercase;
+    color: #152237;
+}
+
+h2 {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 1;
+    letter-spacing: -1.5%;
+    text-align: center;
+    text-transform: uppercase;
+}
