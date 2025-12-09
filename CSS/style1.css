@@ -84,11 +84,22 @@ form input::placeholder {
 }
 
 .btn-blue {
-    background-color: #15B7E2;
+    background-color: #152237;
     color: white;
     border: none;
     border-radius: 6px;
-    padding: 10px 20px;
+    padding: 10px 30px;
+    cursor: pointer;
+    font-weight: bold;
+
+}
+
+.btn-blue {
+    background-color: white;
+    color: #152237;
+    border: none;
+    border-radius: 6px;
+    padding: 10px 30px;
     cursor: pointer;
     font-weight: bold;
 }
@@ -178,6 +189,13 @@ h4 {
     padding: 0 80px;
 }
 
+.section-action {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 50px;
+}
+
 .section-title {
     font-family: 'Montserrat', sans-serif;
     font-weight: 800;
@@ -198,10 +216,8 @@ h4 {
 
 .card {
   background-color: white;
-  overflow: hidden;
   width: 305px; 
   height: 362px;
-  margin-bottom: 40px;
   display: flex;
   flex-direction: column;
 }
@@ -273,6 +289,20 @@ h4 {
 
 .cards-section-light {
     min-height: 530px;
+}
+
+.cards-section-dark {
+    min-height: 530px;
+    color: white;
+    background-color: #152237;
+}
+
+.cards-section-dark div{
+    color: #152237;
+}
+
+.cards-section-dark span{
+    color: white;
 }
 
 .card-bottom {
