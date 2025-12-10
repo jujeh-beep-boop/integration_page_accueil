@@ -181,7 +181,6 @@ header form input::placeholder {
 }
 
 /* SECTION CARDS */
-/* == CLAIRES == */
 
 .cards {
     background: #ffffff;
@@ -209,7 +208,8 @@ header form input::placeholder {
 
 .cards h2 {
     padding: 0 80px;
-    margin-bottom: 30px;
+    margin-top: 20px;
+    margin-bottom: 20px;
     font-family: 'Montserrat', sans-serif;
     font-weight: 800;
     font-size: 36px;
@@ -333,5 +333,7 @@ article {
     display: flex;
     align-items: center;
     justify-content: center;
-      margin: 0 auto;
+      margin: auto;
 }
+
+/* SECTION TESTIMONIALS */
