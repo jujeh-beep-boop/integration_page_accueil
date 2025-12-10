@@ -208,7 +208,7 @@ header form input::placeholder {
 
 .cards h2 {
     padding: 0 80px;
-
+    margin-top: 20px;
     margin-bottom: 20px;
     font-family: 'Montserrat', sans-serif;
     font-weight: 800;
