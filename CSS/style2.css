@@ -1,0 +1,184 @@
+body {
+    margin: 0;
+    padding: 0;
+    gap: 0;
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+    max-width: 100%;
+}
+
+h1, h2, h3, h4, h5, p {
+  margin: 0;
+}
+
+/* NAV BAR STYLE */
+.navbar {
+  position: relative;
+  background-color: #152237;
+  height: 80px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 80px;
+  box-sizing: border-box;
+  text-decoration: none;
+}
+
+.navbar a {
+  text-decoration: none;
+  color: white;
+}
+
+form {
+    background-color: #152237;
+    border: white 1px solid;
+    border-radius: 6px;
+    color: white;
+    width: 477px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 10px;
+    box-sizing: border-box;
+}
+
+header form input {
+    background-color: #152237;
+    border: none;
+    color: white;
+    outline: none;
+    flex: 1;
+}
+
+header form input::placeholder {
+    color: white;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 500;
+}
+
+.loupe {
+    background: none;
+    border: none;
+    color: white;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.buttons-header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+
+.btn-connexion {
+    background-color: white;
+    color: #152237;
+    border: none;
+    border-radius: 6px;
+    padding: 10px 20px;
+    cursor: pointer;
+    font-weight: 500;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 15px;
+    line-height: 100%;
+    letter-spacing: -1.5%;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: auto;
+}
+
+.btn-inscription {
+    background: linear-gradient(95.98deg, #44DD8A 8.7%, #15B7E2 100%);
+    color: #152237;
+    border: none;
+    border-radius: 6px;
+    padding: 10px 20px;
+    cursor: pointer;
+    font-weight: 500;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 15px;
+    line-height: 100%;
+    letter-spacing: -1.5%;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: 10px;
+}
+
+/* SECTION TOP */
+
+.top {
+    background: linear-gradient(94.01deg, rgba(68,221,138,0.8) 3.11%, rgba(21,183,226,0.8) 98.45%),
+                url("../images/image-hero.png") center/cover no-repeat;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 451px;
+    max-height: calc(100vh - 80px);
+    text-align: center;
+    box-sizing: border-box;
+    width: 100%;
+    max-width: none;
+    
+}
+
+.top h1 {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 800;
+    font-size: 48px;
+    line-height: 100%;
+    letter-spacing: -1.5%;
+    text-align: center;
+    text-transform: uppercase;
+    color: #152237;
+}
+
+.top h2 {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 100%;
+    letter-spacing: -1.5%;
+    text-align: center;
+    text-transform: uppercase;
+    color: #152237;
+    vertical-align: middle;
+}
+
+.top button {
+    background: white;
+    color: #152237;
+    border: none;
+    border-radius: 6px;
+    padding: 10px;
+    cursor: pointer;
+    font-weight: 500;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 15px;
+    line-height: 100%;
+    letter-spacing: -1.5%;
+    text-align: center;
+    width: 130px;
+    height: 40px;
+    align-items: center;
+    justify-content: center;
+    
+}
+
+.hero-elements {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+}
+
+/* SECTION CARDS */
+/* == CLAIRES == */

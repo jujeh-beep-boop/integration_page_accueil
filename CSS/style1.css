@@ -80,7 +80,6 @@ form input::placeholder {
     letter-spacing: -1.5%;
     line-height: 100%;
     text-align: center;
-    margin-top: 20px;
 }
 
 .btn-blue {
@@ -91,7 +90,12 @@ form input::placeholder {
     padding: 10px 30px;
     cursor: pointer;
     font-weight: bold;
+    margin-top: 60px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
 }
+
 
 .btn-white-cards {
     background-color: white;
@@ -101,6 +105,10 @@ form input::placeholder {
     padding: 10px 30px;
     cursor: pointer;
     font-weight: bold;
+    margin-top: 60px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .hero {
@@ -114,10 +122,8 @@ height: 451px;
 max-height: calc(100vh - 80px);
 text-align: center;
 box-sizing: border-box;
-
 width: 100%;
-max-width: none; 
-margin: 0;      
+max-width: none;    
 }
 
 h1 {
@@ -135,9 +141,9 @@ h1 {
     font-family: 'Montserrat', sans-serif;
     font-weight: 800;
     font-size: 36px;
-    line-height: 72px;
     letter-spacing: -1.5%;
     text-align: left;
+    margin-bottom: 40px;
 }
 
 h3 {
@@ -164,14 +170,8 @@ h4 {
     letter-spacing: 0%;
 }
 .sections {
-    padding: 0 80px;
-}
-
-.section-action {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    margin-top: 50px;
+    padding: 0px 80px;
+    margin: 0px;
 }
 
 .section-title {
@@ -183,13 +183,20 @@ h4 {
     text-align: left;
 }
 
-.cards-inner{
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(307px, 1fr));
-    justify-items: start;
-    align-items: start;
-    width: 100%;
-
+.section-title-testimonials {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 900;
+    font-size: 40px;
+    line-height: 36px;
+    letter-spacing: -1.5%;
+    text-transform: uppercase;
+    text-align: center;
+    margin-bottom: 60px;
+}
+.cards-inner {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between
 }
 
 .card {
@@ -204,6 +211,7 @@ h4 {
   margin-top: 10px;
   margin-bottom: 5px;
   line-height: 1.2;
+ white-space: nowrap; /* obligée pour garder la taille au pixel!!*/
 }
 
 .card-sub {
@@ -264,10 +272,6 @@ h4 {
   color: rgba(255, 215, 0, 0.6); 
 }
 
-.cards-section {
-    min-height: 632px;
-}
-
 .card-bottom {
     padding: 0px 0px 0px 5px;
 }
@@ -275,4 +279,83 @@ h4 {
 .cards-dark {
     background-color: #152237;
     color: white;
+}
+
+.testimonials {
+    padding: 60px 80px;
+    background-color: #ffffff;
+    max-height: 597px;
+    opacity: 1;
+}
+.testimonial {
+    width: 48%;
+    display: flex;
+    flex-direction: column;
+    margin-top: 0px;
+    margin-bottom: 40px;
+}
+
+.testimonials-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 40px;
+}
+
+.client-image {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    background-color: #ffffff;
+    overflow: hidden;
+    flex-shrink: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.client-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+}
+
+.client-name {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 36px;
+    letter-spacing: -1.5%;
+    margin: 10px 0 5px 0;
+}
+
+.advantages {
+    min-height: 632px;
+    background: #F5F5F5;
+    height: 641px;
+    opacity: 1;
+}
+
+.advantages-inner {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 40px;
+    width: 100%;
+}
+
+.adv-list {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 20px;  
+}
+
+.adv-image img {
+    width: 100%;
+    max-width: 729px;
+    display: flex;
+    align-items: center;   
 }
