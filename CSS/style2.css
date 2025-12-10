@@ -337,3 +337,137 @@ article {
 }
 
 /* SECTION TESTIMONIALS */
+
+.testimonials {
+    background: #ffffff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 597px;
+    text-align: center;
+    box-sizing: border-box;
+    width: 100%;
+    max-width: none;
+    
+}
+
+.testimonials h2 {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 900;
+    font-size: 40px;
+    line-height: 36px;
+    letter-spacing: -1.5%;
+    text-transform: uppercase;
+    text-align: center;
+    color: #152237;
+    margin-bottom: 100px;
+}
+
+.name {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 36px;
+    letter-spacing: -1.5%;
+    text-align: left;
+    color: #152237;
+}
+
+.testimonials img {
+    width: 139px;
+    height: 139px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.testimonials-inner { 
+  width: 100%;
+  padding: 0 200px;
+  box-sizing: border-box;
+}
+
+.testimonials-grid {
+  display: flex;
+  gap: 20px;
+  justify-content: space-between;
+  align-items: flex-start;
+  justify-content: flex-start;
+  text-align: left;
+  flex-wrap: wrap;
+}
+
+.single-testimonial {
+  flex: 1 1 calc(50% - 12px);
+  gap: px;
+  box-sizing: border-box;
+  min-width: 260px;
+}
+
+.review {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 30px;
+    letter-spacing: -1.5%;
+    text-align: left;
+    color: #152237;
+    margin-top: 15px;
+}
+
+/* SECTION ADVANTAGES */
+
+.advantages {
+    min-height: 632px;
+    background: #ff9494;
+    height: 641px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    box-sizing: border-box;
+    width: 100%;
+}
+.advantages h2 {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 900;
+    font-size: 40px;
+    line-height: 36px;
+    letter-spacing: -1.5%;
+    text-transform: uppercase;
+    text-align: left;
+}
+
+.advantages li {
+    text-decoration: none;
+    list-style: none;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 28px;
+    letter-spacing: -1.5%;
+    padding-bottom: 15px;
+}
+
+.advantages-inner {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 40px;
+    padding : 0 80px;
+}
+
+.adv-list {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 20px;  
+}
+
+.adv-image img {
+    width: 100%;
+    max-width: 729px;
+    display: flex;
+    align-items: center;   
+}
