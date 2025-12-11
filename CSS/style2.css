@@ -301,12 +301,12 @@ article {
 }
 
 .cards p {
+    margin-top: 10px;
     font-family: 'Montserrat', sans-serif;
     font-weight: 400;
     font-size: 16px;
     line-height: 18px;
     letter-spacing: 0;
-    color: #152237;
 }
 
 .dark {
@@ -419,7 +419,7 @@ article {
 
 .advantages {
     min-height: 632px;
-    background: #ff9494;
+    background: #F5F5F5;
     height: 641px;
     display: flex;
     flex-direction: column;
@@ -436,25 +436,46 @@ article {
     letter-spacing: -1.5%;
     text-transform: uppercase;
     text-align: left;
+    margin-bottom: 50px;
+    margin-left: 45px;
 }
 
-.advantages li {
-    text-decoration: none;
-    list-style: none;
-    font-family: 'Montserrat', sans-serif;
-    font-weight: 400;
-    font-size: 24px;
-    line-height: 28px;
-    letter-spacing: -1.5%;
-    padding-bottom: 15px;
+.advantages-list li {
+  display: flex;
+  align-items: flex-start;
+  gap: 35px;
+  list-style: none;
+}
+
+.advantages-list li img {
+  flex: 0 0 30px;
+  width: 30px;
+  height: 30px;
+  object-fit: contain;
+  margin: 0;
+}
+
+
+.advantages-list li span {
+  flex: 1 1 auto;
+  display: block; 
+  line-height: 1.25;
+  font-size: 24px;
+}
+
+
+.advantages-list {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;  
 }
 
 .advantages-inner {
     display: flex;
     justify-content: space-between;
-    align-items: center;
+    align-items: flex-start;
     gap: 40px;
-    padding : 0 80px;
+    padding: 0 80px;
 }
 
 .adv-list {
@@ -466,6 +487,84 @@ article {
 }
 
 .adv-image img {
+    width: 100%;
+    max-width: 729px;
+    display: flex;
+    align-items: center;   
+}
+
+/* SECTION FORMATIONS */
+
+.formations {
+    min-height: 632px;
+    background: #44DD8A;
+    height: 641px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    box-sizing: border-box;
+    width: 100%;
+}
+.formations h2 {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 900;
+    font-size: 40px;
+    line-height: 36px;
+    letter-spacing: -1.5%;
+    text-transform: uppercase;
+    text-align: left;
+    margin-bottom: 50px;
+    margin-left: 45px;
+}
+
+.formations-list li {
+  display: flex;
+  align-items: flex-start;
+  gap: 35px;
+  list-style: none;
+}
+
+.formations-list li img {
+  flex: 0 0 30px;
+  width: 30px;
+  height: 30px;
+  object-fit: contain;
+  margin: 0;
+}
+
+
+.formations-list li span {
+  flex: 1 1 auto;
+  display: block; 
+  line-height: 1.25;
+  font-size: 24px;
+}
+
+
+.formations-list {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;  
+}
+
+.formations-inner {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 40px;
+    padding: 0 80px;
+}
+
+.formations-list {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 20px;  
+}
+
+.formations-image img {
     width: 100%;
     max-width: 729px;
     display: flex;
