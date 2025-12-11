@@ -434,8 +434,8 @@ article {
     letter-spacing: -0.0375em;
     text-transform: uppercase;
     text-align: left;
-    margin-bottom: 3.125em;
-    margin-left: 2.8125em;
+    margin-bottom: 1.5em;
+    margin-left: 1.1em;
 }
 
 .advantages-list {
@@ -493,7 +493,6 @@ article {
 /* ↓=== SECTION FORMATIONS ===↓ */
 .formations {
     min-height: 40.0625em;
-    height: 40.0625em;
     background: #44DD8A;
     display: flex;
     flex-direction: column;
@@ -511,9 +510,8 @@ article {
   letter-spacing: -0.0375em;
   text-transform: uppercase;
   text-align: left;
-  margin-bottom: 2em;
+  margin-bottom: 1.5em;
   margin-left: 1em;
-  white-space: nowrap;
 }
 
 .formations-list {
@@ -557,7 +555,7 @@ article {
 
 .formations-image img {
     width: 100%;
-    min-width: 45.5625em;
+    min-width: 40.0625em;
     display: flex;
     align-items: center;
 }
@@ -566,14 +564,14 @@ article {
 /* ↓=== SECTION A PROPOS ===↓ */
 .about {
     background: #F5F5F5;
-    min-height: 30em;
-    padding: 3em 0;
+    min-height: 44em;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
     box-sizing: border-box;
     width: 100%;
+    margin: 0;
 }
 
 .about h2 {
@@ -605,7 +603,7 @@ article {
 
 .about-before-image {
   width: 50%;
-  height : 740px;
+  min-height: 30em;
   display: flex;
   align-items: center;
   justify-content: center;
