@@ -801,7 +801,6 @@ footer {
 .first-hr-footer {
   position: absolute;
   top: -1.125em;
-  width: calc(100% + 5em);
   height: 1.125em;
   border: 0;
   background: linear-gradient(90.01deg, #44DD8A 2.38%, #18A0FB 100%);
