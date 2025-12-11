@@ -5,6 +5,7 @@ body {
     box-sizing: border-box;
     font-family: 'Montserrat', sans-serif;
     max-width: 100%;
+    font-size: 62.5%;
 }
 
 h1, h2, h3, h4, h5, p {
@@ -15,11 +16,11 @@ h1, h2, h3, h4, h5, p {
 .navbar {
   position: relative;
   background-color: #152237;
-  height: 80px;
+ height: 5rem;
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 0 80px;
+  padding: 0 5rem;
   box-sizing: border-box;
   text-decoration: none;
 }
