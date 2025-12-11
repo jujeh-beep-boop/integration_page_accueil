@@ -783,10 +783,11 @@ position: relative;
   width: 100%;
   max-width: 1700px;
   box-sizing: border-box;
+  padding-bottom: 30px;
 }
 
 .footer-logo img {
-  max-height: 64px;
+  max-height: 87px;
   display: block;
 }
 
@@ -799,7 +800,7 @@ position: relative;
 
 .footer-legal h4,
 .footer-contact h4 {
-  margin-bottom: 12px;
+  margin-bottom: 30px;
   color: #ffffff;
 }
 
@@ -819,7 +820,6 @@ position: relative;
   text-decoration: none;
 }
 
-/* right column actions (buttons) */
 .footer-actions {
   display: flex;
   flex-direction: column;
@@ -843,21 +843,113 @@ footer hr {
     opacity: 1;
 }
 
+.footer-legal li img {
+  flex: 0 0 20px;
+  width: 20px;
+  height: 20px;
+  object-fit: contain;
+  display: block;
+}
+
+.footer-legal li a {
+  color: #ffffff;
+  text-decoration: none;
+  display: block;
+  min-width: 0;
+  line-height: 1.3;
+}
+
+.footer-contact p {
+    display: flex;
+    align-items: center;
+    gap: 18px;
+    margin: 0 0 12px 0;
+    line-height: 1.3;
+    min-width: 0;
+}
+
+.footer-contact p img {
+    flex: 0 0 24px;
+    width: 24px;
+    height: 24px;
+    object-fit: contain;
+    display: block;
+    margin-top: 2px;
+}
+
+.footer-contact p span {
+    flex: 1 1 auto;
+    display: block;
+    min-width: 0;
+    color: rgba(255,255,255,0.9);
+}
+
+.footer-contact p span a {
+    color: #ffffff;
+    text-decoration: none;
+    display: inline-block;
+}
+
+.footer-contact .no-wrap {
+    white-space: nowrap;
+}
+
+.footer-links {
+    flex: 1 1 auto;
+    min-width: 0;
+}
+
+.footer-actions {
+    margin-left: auto;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    align-items: flex-end;
+}
+
 .footer-bottom {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  gap: 20px;
-  width: 100%;
-  max-width: 1200px;
-  margin: 0 auto;
-  box-sizing: border-box;
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    gap: 200px;
+    width: 100%;
+    max-width: 1700px;
+    box-sizing: border-box;
+    padding-bottom: 30px;
+}
+
+.footer-copyright {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 24px;
+    letter-spacing: -1.5%;
+    text-align: left;
+}
+
+.footer-social {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 24px;
+    letter-spacing: -1.5%;
+    text-align: right;
+}
+
+.social-icons {
+    display: flex;
+    gap: 15px;
+    font-size: 30px;
 }
 
 .footer-social .social-icons a {
   color: #ffffff;
   margin-left: 8px;
   text-decoration: none;
+  
 }
 
 .btn-connexion-footer {
