@@ -113,6 +113,52 @@ header form input::placeholder {
     justify-content: center;
     margin-left: 0.625em;
 }
+
+.burger-menu {
+  display: none;
+}
+
+@media (max-width: 768px) {
+  .navbar {
+    padding: 1rem 1.25rem;
+    justify-content: space-between;
+  }
+
+  form {
+    display: none;
+  }
+
+  header nav {
+    display: none;
+  }
+
+  .buttons-header {
+    display: none;
+  }
+
+    .burger-menu {
+      display: flex;
+      flex-direction: column;
+      gap: 0.375em;
+      background: none;
+      border: none;
+      cursor: pointer;
+      padding: 0;
+      color: white;
+      order: 2;
+      margin-left: auto;
+      font-size: 30px;
+    }
+
+
+  .burger-menu span {
+    width: 1.5em;
+    height: 0.25em;
+    background-color: white;
+    border-radius: 0.125em;
+  }
+}
+
 /* ↑=== HEADER ===↑ */
 
 /* ↓=== SECTION TOP HERO===↓ */
@@ -331,6 +377,28 @@ article {
     line-height: 1.125;
     letter-spacing: 0;
 }
+
+@media (max-width: 1000px) {
+  .all-cards {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  article {
+    margin-bottom: 2em;
+  }
+
+  .cards button {
+    margin-bottom: 2em;
+  }
+
+  .top {
+    background: linear-gradient(94.01deg, rgba(68,221,138,0.8) 3.11%, rgba(21,183,226,0.8) 98.45%),
+                url("../images/woman-mobile.png") center/cover no-repeat;
+  }
+
+}
+
 /* ↑=== SECTION CARDS ===↑ */
 
 /* ↓=== SECTION TESTIMONIALS ===↓ */
@@ -410,6 +478,35 @@ article {
     margin-top: 0.9375em;
 }
 
+@media (max-width: 768px) {
+  .testimonials-inner {
+    padding: 0 1.25em;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .single-testimonial {
+    flex: 1 1 100%;
+    align-items: center;
+    text-align: center;
+  }
+
+  .content .review {
+    text-align: left;
+  } 
+
+  .testimonials img {
+    margin: 0 auto 0.9375em;
+  }
+
+  .name {
+    text-align: center;
+  }
+
+  .review {
+    text-align: center;
+  }
+}
 
 /* ↑=== SECTION TESTIMONIALS ===↑ */
 
