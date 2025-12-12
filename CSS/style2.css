@@ -856,7 +856,7 @@ padding: 0 80px;
 .contact input[type="text"],
 .contact input[type="email"] {
     width: 100%;
-    max-width: 37.375em;
+    max-width: 42em;
     height: 2.83125em;
     border: none;
     border-radius: 0.375em;
@@ -867,7 +867,10 @@ padding: 0 80px;
     background-color: #152237;
     margin: 0;
 }
-
+.contact .form-input {
+    font-family: 'Montserrat', sans-serif;
+    font-size: large;
+}
 .contact input::placeholder,
 .contact textarea::placeholder {
     color: rgba(255,255,255,0.85);
@@ -888,6 +891,9 @@ padding: 0 80px;
   resize: vertical;
   margin: 0 auto;
   display: block;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 1rem;
+  line-height: 1.4;
 }
 
 .form-button {
