@@ -12,6 +12,13 @@ h1, h2, h3, h4, h5, p {
   margin: 0;
 }
 
+h2 {
+    font-family: 'Montserrat', sans-serif;
+    letter-spacing: -0.0375em;
+    font-weight: 900; 
+
+}
+
 
 /* ↓=== HEADER ===↓ */
 .navbar {
@@ -149,14 +156,6 @@ header form input::placeholder {
       margin-left: auto;
       font-size: 30px;
     }
-
-
-  .burger-menu span {
-    width: 1.5em;
-    height: 0.25em;
-    background-color: white;
-    border-radius: 0.125em;
-  }
 }
 
 /* ↑=== HEADER ===↑ */
@@ -189,11 +188,9 @@ header form input::placeholder {
 }
 
 .top h2 {
-    font-family: 'Montserrat', sans-serif;
     font-weight: 500;
     font-size: 1.25em;
     line-height: 1;
-    letter-spacing: -0.01875em;
     text-align: center;
     text-transform: uppercase;
     color: #152237;
@@ -280,11 +277,9 @@ header form input::placeholder {
 
 .cards h2 {
     margin-bottom: 1em;
-    font-family: 'Montserrat', sans-serif;
     font-weight: 800;
     font-size: 2.25em;
     line-height: 2;
-    letter-spacing: -0.03375em;
     text-align: left;
 }
 
@@ -416,11 +411,8 @@ article {
 }
 
 .testimonials h2 {
-    font-family: 'Montserrat', sans-serif;
-    font-weight: 900;
     font-size: 2.5em;
     line-height: 1;
-    letter-spacing: -0.0375em;
     text-transform: uppercase;
     text-align: center;
     color: #152237;
@@ -524,8 +516,6 @@ article {
 }
 
 .advantages h2 {
-    font-family: 'Montserrat', sans-serif;
-    font-weight: 900;
     font-size: 2.5em;
     line-height: 1;
     letter-spacing: -0.0375em;
@@ -588,8 +578,6 @@ article {
 }
 
 .formations h2 {
-  font-family: 'Montserrat', sans-serif;
-  font-weight: 900;
   font-size: 2.5em;
   line-height: 1;
   letter-spacing: -0.0375em;
@@ -715,7 +703,6 @@ article {
   .advantages-list li p {
     font-size: .95em;
     line-height: 1.3;
-    word-break: break-word;
   }
 
 }
@@ -734,11 +721,8 @@ article {
 }
 
 .about h2 {
-    font-family: 'Montserrat', sans-serif;
-    font-weight: 900;
     font-size: 40px;
     line-height: 36px;
-    letter-spacing: -1.5%;
     text-transform: uppercase;
     text-align: left;
     margin-bottom: 50px;
@@ -750,7 +734,7 @@ article {
     font-weight: 400;
     font-size: 18px;
     line-height: 28px;
-    letter-spacing: -1.5%;
+    letter-spacing: -0.01875em;
 }
 
 .about-inner {
@@ -835,11 +819,8 @@ padding: 0 80px;
 }
 
 .contact h2 {
-  font-family: 'Montserrat', sans-serif;
-  font-weight: 900;
   font-size: 2.5em;
   line-height: 1;
-  letter-spacing: -0.0375em;
   text-transform: uppercase;
   text-align: center;
   color: #152237;
