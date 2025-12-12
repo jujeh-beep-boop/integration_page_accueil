@@ -435,39 +435,6 @@ article {
     margin-bottom: 1.5em;
 }
 
-.advantages-list {
-    display: flex;
-    flex-direction: column;
-    gap: 1.25em;
-}
-
-.advantages ul {
-    padding: 0;
-    margin: 0;
-}
-
-.advantages-list li {
-  display: flex;
-  align-items: flex-start;
-  gap: 2.1875em;
-  list-style: none;
-}
-
-.advantages-list li img {
-  flex: 0 0 1.875em;
-  width: 1.875em;
-  height: 1.875em;
-  object-fit: contain;
-  margin: 0;
-}
-
-.advantages-list li span {
-  flex: 1 1 auto;
-  display: block;
-  line-height: 1.25;
-  font-size: 1.5em;
-}
-
 .advantages-inner {
   display: flex;
   gap: 2.5em;
@@ -475,19 +442,29 @@ article {
   box-sizing: border-box;
 }
 
-.adv-list {
-    width: 50%;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    gap: 1.25em;
+
+.advantages-list li {
+  display: flex;
+  align-items: flex-start;
+  gap: 1rem;
 }
 
-.advantages-image img {
-    width: 45.5625em;
-    min-width: 45.5625em;
-    display: flex;
-    align-items: center;
+.advantages-list li p {
+  flex: 1 1 auto;
+  display: block;
+  font-size: 1.5rem;
+  color: #152237;
+}
+
+.advantages-list {
+  display: flex;
+  flex-direction: column;
+  gap: 1.25em;
+  width: 100%;
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  list-style: none;
 }
 /* ↑=== SECTION ADVANTAGES ===↑ */
 
@@ -499,88 +476,27 @@ article {
   box-sizing: border-box;
   width: 100%;
   display: flex;
+  flex-direction: column;
+  align-items: center;
   justify-content: center;
 }
 
 .formations-inner {
   display: flex;
-  gap: 2.5em;
-  align-items: center;
+  gap: 5em;
+  align-items: flex-start;
   box-sizing: border-box;
-  width: 100%;
-  max-width: 1200px;
-  margin: 0 auto;
 }
 
-.formations-image {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  width: 50%;
-  box-sizing: border-box;
-  text-align: center;
-}
-
-.formations-image img {
-  display: block;
-  max-width: 100%;
-  height: auto;
-  margin: 0 auto;
-}
-
-.formations-inner > div:nth-child(2) {
-  width: 50%;
-  box-sizing: border-box;
-  padding: 0 1rem;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-}
-
-.formations-inner > div:nth-child(2) h2,
 .formations h2 {
   font-family: 'Montserrat', sans-serif;
   font-weight: 900;
-  font-size: 2.3em;
+  font-size: 2.5em;
   line-height: 1;
   letter-spacing: -0.0375em;
   text-transform: uppercase;
   text-align: left;
-  margin: 0 0 1.5em 0;
-  color: #152237;
-}
-
-.advantages-list,
-.formations-inner > div:nth-child(2) .advantages-list {
-  display: flex;
-  flex-direction: column;
-  gap: 1.25em;
-  width: 100%;
-  box-sizing: border-box;
-  padding: 0;
-  margin: 0;
-  list-style: none;
-}
-
-.advantages-list li {
-  display: flex;
-  align-items: flex-start;
-  gap: 1rem;
-}
-
-.advantages-list li img {
-  width: 1.875em;
-  height: 1.875em;
-  object-fit: contain;
-  display: block;
-  margin: 0;
-}
-
-.advantages-list li span {
-  flex: 1 1 auto;
-  display: block;
-  line-height: 1.25;
-  font-size: 1.1rem;
+  margin-bottom: 1.5em;
   color: #152237;
 }
 
@@ -594,7 +510,6 @@ article {
     justify-content: center;
     box-sizing: border-box;
     width: 100%;
-    margin: 0;
 }
 
 .about h2 {
@@ -637,19 +552,6 @@ article {
 .about-text {
 padding: 0 80px;
 }
-.about-image {
-  width: 100%;
-  max-width: 430px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
-.about-image img {
-  width: 100%;
-  height: auto;
-  display: block;
-}
 /* ↑=== SECTION A PROPOS ===↑ */
 
 /* ↓=== SECTION CONTACT ===↓ */
@@ -674,7 +576,7 @@ padding: 0 80px;
     text-transform: uppercase;
     text-align: center;
     color: #152237;
-    margin: 0 0 1.25em 0;
+    margin: 0 0 0.8em 0;
 }
 
 .contact hr {
@@ -683,10 +585,9 @@ padding: 0 80px;
     height: 0.125em;
     background-color: #44DD8A;
     border: none;
-    margin-bottom: 2em;
+    margin-bottom: 2.5em;
 }
 
-.contact form,
 .contact > div {
   width: 100%;
   box-sizing: border-box;
@@ -791,20 +692,13 @@ footer {
   display: flex;
   flex-direction: column;
   gap: 1.5em;
-  padding: 2.5em 5em;
+  padding: 2em 5em;
   box-sizing: border-box;
   width: 100%;
   min-height: 30.5625em;
   justify-content: center;
-}
-
-.first-hr-footer {
-  position: absolute;
-  top: -1.125em;
-  height: 1.125em;
-  border: 0;
-  background: linear-gradient(90.01deg, #44DD8A 2.38%, #18A0FB 100%);
-  margin: 0;
+  border-top: 1em solid;
+  border-image: linear-gradient(90.01deg, #44DD8A 2.38%, #18A0FB 100%) 1;
 }
 
 .footer-top-inner {
@@ -815,7 +709,7 @@ footer {
   width: 100%;
   max-width: 106.25em;
   box-sizing: border-box;
-  padding-bottom: 1.875em;
+  padding-bottom: 1em;
 }
 
 .footer-logo img {
@@ -937,7 +831,6 @@ footer hr {
   width: 100%;
   max-width: 106.25em;
   box-sizing: border-box;
-  padding-bottom: 1.875em;
 }
 
 .footer-copyright {
