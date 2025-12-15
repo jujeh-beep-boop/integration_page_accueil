@@ -173,7 +173,7 @@
 </section>
 
 <!--SECTION CARTES FOND FONCE-->
-<section class="bg-gray-900 text-white p-10">
+<section class="bg-gray-900 text-white min-h-[60vh] p-10">
   <h2 class="text-2xl font-extrabold mb-6 uppercase text-center">Les formations récentes</h2>
 
   <div class="flex items-stretch gap-8 flex-wrap justify-center mb-6">
@@ -261,55 +261,93 @@
       </div>
     </article>
 
+    <article class="bg-gray-800 rounded-lg shadow-md p-4 w-[350px] h-[400px] flex flex-col">
+      <div class="bg-[url('images/img-course.png')] bg-cover bg-center h-40 rounded-t-lg"></div>
 
-
+      <div class="mt-4 flex-1 flex flex-col">
+        <div class="mt-4">
+          <span class="inline-flex items-center bg-white text-gray-900 px-3.5 py-1.5 rounded-full text-sm font-semibold shadow whitespace-nowrap">
+            15,99€
+          </span>
+          <span class="ml-3 text-sm text-white/70 line-through">60€</span>
+        </div>
+
+        <div class="flex-1">
+          <h3 class="text-xl font-bold">Leadership positif</h3>
+          <h4 class="font-semibold text-sm text-white/90">Marc Nguyen | Consultant</h4>
+
+          <div class="text-yellow-400 mt-2">
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star text-yellow-600"></i>
+          </div>
+
+          <p class="pt-2 text-sm text-white/90">Inspirez, motivez et fédérez votre équipe</p>
+        </div>
+      </div>
+    </article>
+  </div>
+
+  <div class="mt-8 flex justify-center">
+    <button class="bg-indigo-100 text-gray-900 hover:bg-green-400 px-6 py-2 rounded font-bold">
+      Voir plus de formations
+    </button>
+  </div>
+</section>
+
       <!--SECTION TESTIMONIALS-->
-      <section class="testimonials">
-        <div class="testimonials-inner">
-          <h2>Avis clients</h2>
+      <section class="bg-gray-100 text-gray-900 min-h-[45vh] p-10 items-center justify-center flex">
+        <div>
+          <h2 class="text-2xl font-extrabold mb-6 uppercase text-center pb-10">Avis clients</h2>
 
-          <div class="testimonials-grid">
-            <div class="single-testimonial">
-              <div class="thumb">
-                <img src="images/juliette.png" alt="Portrait de Juliette">
-              </div>
-              <div class="content">
-                <p class="name">Juliette</p>
-                <div class="stars">
-                  <i class="fas fa-star"></i>
-                  <i class="fas fa-star"></i>
-                  <i class="fas fa-star"></i>
-                  <i class="fas fa-star"></i>
-                  <i class="fas fa-star"></i>
+          <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+            <div class="bg-white rounded-lg shadow-md p-6">
+              <div class="flex gap-4">
+                <div class="flex-shrink-0">
+                  <img src="images/juliette.png" alt="Portrait de Juliette" class="w-16 h-16 rounded-full object-cover">
                 </div>
-                <p class="review">
-                  J’ai trouvé le parcours très bien structuré : vidéos courtes,
-                  quizzes pertinents et projets pratiques qui m’ont permis
-                  d’appliquer immédiatement les notions. L’interface est claire
-                  et la progression est motivante — parfait pour se former en
-                  autonomie.
-                </p>
+                <div class="flex-1">
+                  <p class="font-bold text-lg">Juliette</p>
+                  <div class="text-yellow-400 mt-2">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                  </div>
+                  <p class="review mt-3">
+                    J'ai trouvé le parcours très bien structuré : vidéos courtes,
+                    quizzes pertinents et projets pratiques qui m'ont permis
+                    d'appliquer immédiatement les notions. L'interface est claire
+                    et la progression est motivante — parfait pour se former en
+                    autonomie.
+                  </p>
+                </div>
               </div>
             </div>
 
-            <div class="single-testimonial">
-              <div class="thumb">
-                <img src="images/camille.png" alt="Portrait de Camille">
-              </div>
-              <div class="content">
-                <p class="name">Camille</p>
-                <div class="stars">
-                  <i class="fas fa-star"></i>
-                  <i class="fas fa-star"></i>
-                  <i class="fas fa-star"></i>
-                  <i class="fas fa-star"></i>
-                  <i class="fas fa-star"></i>
+            <div class="bg-white rounded-lg shadow-md p-6">
+              <div class="flex gap-4">
+                <div class="flex-shrink-0">
+                  <img src="images/camille.png" alt="Portrait de Camille" class="w-16 h-16 rounded-full object-cover">
                 </div>
-                <p class="review">
-                  Bon équilibre entre théorie et pratique. Les chapitres sont
-                  détaillés, et le support et les corrections automatiques ont
-                  vraiment aidé. Idéal pour démarrer et progresser rapidement.
-                </p>
+                <div class="flex-1">
+                  <p class="font-bold text-lg">Camille</p>
+                  <div class="text-yellow-400 mt-2">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                  </div>
+                  <p class="review mt-3">
+                    Bon équilibre entre théorie et pratique. Les chapitres sont
+                    détaillés, et le support et les corrections automatiques ont
+                    vraiment aidé. Idéal pour démarrer et progresser rapidement.
+                  </p>
+                </div>
               </div>
             </div>
           </div>
@@ -317,8 +355,8 @@
       </section>
 
       <!--SECTION AVANTAGES-->
-      <section class="advantages">
-        <div class="advantages-inner">
+      <section class="bg-gray-900 text-gray-100 min-h-[60vh] p-10 items-center justify-center flex ">
+        <div class=">
           <div>
             <h2>Les avantages Klivio</h2>
             <ul class="advantages-list">
@@ -369,9 +407,9 @@
       </section>
 
       <!--SECTION FORMATIONS-->
-      <section class="formations">
+      <section class="bg-gray-100 text-gray-900 min-h-[60vh] p-10 items-center justify-center flex ">
         <div class="formations-inner">
-                      <h2 class="h2-hidden">Créez vos formations</h2>
+                      <h2 class="hidden">Créez vos formations</h2>
           <div class="formations-image">
 
             <img src="images/become-author.png" alt="Bureau vu de haut">
