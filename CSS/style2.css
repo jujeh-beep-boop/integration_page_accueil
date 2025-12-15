@@ -143,6 +143,7 @@ header form input::placeholder {
     display: none;
   }
 
+    /* au cas où je décide de faire un burger menu fonctionnel */
     .burger-menu {
       display: flex;
       flex-direction: column;
@@ -373,7 +374,7 @@ article {
     letter-spacing: 0;
 }
 
-@media (max-width: 1000px) {
+@media (max-width: 1500px) {
   .all-cards {
     flex-wrap: wrap;
     justify-content: center;
@@ -591,7 +592,7 @@ article {
   display: none;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 1400px) {
 .h2-here { 
     display: none; 
   }
@@ -770,7 +771,7 @@ padding: 0 80px;
   display: block;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 1500px) {
   .about-inner {
     flex-direction: column;
   }
