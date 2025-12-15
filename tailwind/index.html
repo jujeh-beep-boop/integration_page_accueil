@@ -17,7 +17,7 @@
 
   <body>
     <!--HEADER-->
-    <header class="bg-gray-900 text-white flex items-center justify-between p-4">
+    <header class="bg-gray-900 text-white flex items-center justify-between p-5 font-bold">
       <button class="burger-menu hidden" aria-label="Menu de navigation">
         <i class="fas fa-bars"></i>
       </button>
@@ -33,15 +33,15 @@
         method="get"
         aria-label="Recherche sur le site"
       >
-        <input type="search" name="q" placeholder="Rechercher">
-        <button aria-label="Rechercher" class="loupe">
-          <img src="images/Icon-loupe.png" alt="Loupe">
+        <input type="search" name="q" placeholder="Rechercher" class="bg-gray-900 text-gray-100 px-4 py-2 rounded-l border border-r-0 border-gray-300 focus:outline-none" />
+        <button aria-label="Rechercher" class="bg-gray-900 text-gray-100 px-4 py-2 rounded-r border border-gray-300 border-l-0 hover:bg-gray-500">
+          <i class="fas fa-magnifying-glass"></i>
         </button>
       </form>
 
-      <div class="buttons-header">
-        <button class="btn-connexion">Connexion</button>
-        <button class="btn-inscription">Inscription</button>
+      <div class="ml-auto md:ml-4 flex items-center gap-3 bg">
+        <button class="bg-gray-100 text-gray-900 px-4 py-2 rounded">Connexion</button>
+        <button class="bg-blue-600 text-white px-4 py-2 rounded">Inscription</button>
       </div>
     </header>
 
