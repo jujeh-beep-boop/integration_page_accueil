@@ -237,7 +237,7 @@ header form input::placeholder {
   background-color: #ffffff;
 }
 .cards {
-    display: flex;
+    display: grid;
     flex-direction: column;
     align-items: flex-start;
     justify-content: center;
@@ -250,12 +250,12 @@ header form input::placeholder {
 }
 
 .all-cards {
-display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(270px, 1fr));
-  gap: 1.875rem;
-  align-items: start;
-  box-sizing: border-box;
-  width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 1.875em;
+    box-sizing: border-box;
+    width: 100%;
 }
 
 .btn-formations {
@@ -346,7 +346,6 @@ article {
 }
 
 .cards-title {
-    margin-top: 0.625em;
     margin-bottom: 0.3125em;
     font-family: 'Montserrat', sans-serif;
     font-weight: 700;
@@ -374,7 +373,7 @@ article {
     letter-spacing: 0;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 1500px) {
   .all-cards {
     flex-wrap: wrap;
     justify-content: center;
@@ -514,7 +513,6 @@ article {
     justify-content: center;
     box-sizing: border-box;
     width: 100%;
-  box-sizing: border-box;
 }
 
 .advantages h2 {
@@ -525,6 +523,14 @@ article {
     text-align: left;
     margin-bottom: 1.5em;
 }
+
+.advantages-inner {
+  display: flex;
+  gap: 2.5em;
+  align-items: flex-start;
+  box-sizing: border-box;
+}
+
 
 .advantages-list li {
   display: flex;
@@ -564,14 +570,11 @@ article {
   justify-content: center;
 }
 
-.formations-inner,
-.advantages-inner {
-  display: grid;
-  grid-template-columns: 1fr auto;
-  gap: 2.5rem;
-  align-items: center;
+.formations-inner {
+  display: flex;
+  gap: 5em;
+  align-items: flex-start;
   box-sizing: border-box;
-  width: 100%;
 }
 
 .formations h2 {
@@ -588,7 +591,7 @@ article {
   display: none;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 1400px) {
 .h2-here { 
     display: none; 
   }
@@ -621,7 +624,7 @@ article {
     width: 100%;
     max-height: 14em;
     overflow: hidden;
-    display: block;
+    display: flex;
     align-items: center;
     justify-content: center;
     padding: .25rem 0;
@@ -629,11 +632,11 @@ article {
   }
 
   .formations-image img {
-display: block;
-  width: 100%;
-  height: auto;
-  max-height: 380px;
-  object-fit: contain;
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    max-width: 100%;
+    display: block;
 
   }
 
@@ -767,7 +770,7 @@ padding: 0 80px;
   display: block;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 1500px) {
   .about-inner {
     flex-direction: column;
   }
@@ -793,7 +796,7 @@ padding: 0 80px;
 
 }
 
-@media (max-width: 768px) {
+@media (max-width: 1000px) {
   .about img {
     width: 80%;
     margin: 0 auto;
