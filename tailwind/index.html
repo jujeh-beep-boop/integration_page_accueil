@@ -17,35 +17,32 @@
 
   <body>
     <!--HEADER-->
-    <header class="bg-gray-900 text-white flex items-center justify-between px-10 py-5 font-bold">
-      <button class="burger-menu hidden" aria-label="Menu de navigation">
-      <i class="fas fa-bars"></i>
-      </button>
-      <a href="index.html"><img src="images/logo.png" alt="Logo Klivio"></a>
+<header class="bg-gray-900 text-white flex items-center justify-between px-10 py-5 font-bold sticky top-0 z-50 w-full">
+  <button class="burger-menu inline-flex items-center p-2 md:hidden ml-auto md:ml-0" aria-label="Menu de navigation">
+    <i class="fas fa-bars fa-2x"></i>
+  </button>
 
-      <nav aria-label="Navigation principale">
-      <a href="#">Les formations</a>
-      </nav>
+  <a href="index.html" class="hidden md:block">
+    <img src="images/logo.png" alt="Logo Klivio">
+  </a>
 
-      <form
-      role="search"
-      action="/search"
-      method="get"
-      aria-label="Recherche sur le site"
-      >
-      <input type="search" name="q" placeholder="Rechercher" class="bg-gray-900 text-gray-100 px-4 py-2 rounded-l border border-r-0 border-gray-300 focus:outline-none" />
-      <button aria-label="Rechercher" class="bg-gray-900 text-gray-100 px-4 py-2 rounded-r border border-gray-300 border-l-0 hover:bg-gray-500">
-        <i class="fas fa-magnifying-glass"></i>
-      </button>
-      </form>
+  <nav aria-label="Navigation principale" class="hidden md:flex md:items-center md:gap-6">
+    <a href="#" class="block md:inline">Les formations</a>
+  </nav>
 
-      <div class="ml-auto md:ml-4 flex items-center gap-3 bg">
-      <button class="bg-teal-300 hover:bg-teal-600 hover:text-gray-100 text-gray-900 px-4 py-2 rounded">Connexion</button>
-      <button class="bg-blue-200 text-gray-900 hover:bg-blue-600 hover:text-gray-100 px-4 py-2 rounded">Inscription</button>
-      </div>
-    </header>
+  <form role="search" action="/search" method="get" aria-label="Recherche sur le site" class="hidden md:flex md:items-center">
+    <input type="search" name="q" placeholder="Rechercher" aria-label="Champ de recherche" class="bg-gray-900 text-gray-100 px-4 py-2 rounded-l border border-r-0 border-gray-300 focus:outline-none" />
+    <button aria-label="Rechercher" class="bg-gray-900 text-gray-100 px-4 py-2 rounded-r border border-gray-300 border-l-0 hover:bg-gray-500">
+      <i class="fas fa-magnifying-glass"></i>
+    </button>
+  </form>
 
-    <main>
+  <div class="hidden md:flex ml-auto md:ml-4 items-center gap-3">
+    <button class="bg-teal-300 hover:bg-teal-600 hover:text-gray-100 text-gray-900 px-4 py-2 rounded">Connexion</button>
+    <button class="bg-blue-200 text-gray-900 hover:bg-blue-600 hover:text-gray-100 px-4 py-2 rounded">Inscription</button>
+  </div>
+</header>
+
       <!--SECTION TOP // HERO -->
       <section class="px-10 bg-cover bg-center flex items-center justify-center text-center text-gray-100 min-h-[60vh] bg-gradient-to-r from-gray-900 to-blue-900">
         <div class="hero-elements">
@@ -309,7 +306,7 @@
                   <img src="images/juliette.png" alt="Portrait de Juliette" class="w-16 h-16 rounded-full object-cover">
                 </div>
                 <div class="flex-1">
-                  <p class="font-bold text-lg">Juliette</p>
+                  <h3 class="font-bold text-lg">Juliette</h3>
                   <div class="text-yellow-400 mt-2">
                     <i class="fas fa-star"></i>
                     <i class="fas fa-star"></i>
@@ -334,7 +331,7 @@
                   <img src="images/camille.png" alt="Portrait de Camille" class="w-16 h-16 rounded-full object-cover">
                 </div>
                 <div class="flex-1">
-                  <p class="font-bold text-lg">Camille</p>
+                  <h3 class="font-bold text-lg">Camille</h3>
                   <div class="text-yellow-400 mt-2">
                     <i class="fas fa-star"></i>
                     <i class="fas fa-star"></i>
@@ -513,7 +510,7 @@
       <div class="text-gray-100">
         <div class="flex flex-col md:flex-row items-center justify-between mb-10">
           <div class="">
-            <img src="images/logo-footer.png" alt="Logo Klivio">
+            <img src="images/logo-footer.png" alt="Logo footer Klivio">
           </div>
 
           <div class="flex gap-20 mb-10 md:mb-0">
