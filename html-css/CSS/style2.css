@@ -397,6 +397,11 @@ article {
                 url("../images/woman-mobile.png") center/cover no-repeat;
   }
 
+  .cards h2 {
+    align-items: center;
+    text-align: center;
+    line-height: 1.2;
+  }
 }
 
 /* ↑=== SECTION CARDS ===↑ */
@@ -620,6 +625,9 @@ article {
 
   .advantages h2, .formations h2, .about h2 {
     font-size: 2rem;
+    align-items: center;
+    text-align: center;
+    line-height: 1.2;
   }
 
   .advantages-list li p {
@@ -637,7 +645,7 @@ article {
 
   .formations,
   .advantages {
-    padding: 1rem;
+    padding: 2rem;
     min-height: auto;
   }
 
@@ -657,8 +665,6 @@ article {
   .formations-image {
     order: 0;
     width: 100%;
-    max-height: 14em;
-    overflow: hidden;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -666,13 +672,13 @@ article {
     box-sizing: border-box;
   }
 
+
   .formations-image img {
     width: 100%;
     height: auto;
     object-fit: cover;
     max-width: 100%;
     display: block;
-
   }
 
   .formations-inner > div:nth-child(2),
@@ -682,11 +688,15 @@ article {
     box-sizing: border-box;
   }
 
-  .formations h2 {
+  .formations h2,
+  .advantages h2 {
     font-size: 2em;
     line-height: 1.2;
     margin: 0 0 .6rem 0;
+    padding: 0.3em 1em;
     text-align: center;
+        align-items: center;
+    line-height: 1.2;
   }
 
   .formations-list li,
@@ -703,6 +713,7 @@ article {
     margin-top: .15rem;
     object-fit: contain;
     margin-right: .7rem;
+  
   }
   .formations-list li span,
   .advantages-list li span,
@@ -1030,7 +1041,6 @@ footer {
 
 footer hr {
   width: 100%;
-  max-width: 92.625em;
   border: 0;
   height: 0.125em;
   background: #44DD8A;
@@ -1184,7 +1194,20 @@ footer hr {
    .footer-actions{
     display:none;
    }
+
+     .footer-links {
+    align-items: center;
+    text-align: center;
   }
+    .footer-contact {
+    align-items: center;
+    text-align: center;
+  }
+
+  
+  }
+
+
 
 @media (max-width: 768px) {
   .footer-top-inner,
@@ -1192,6 +1215,16 @@ footer hr {
     gap: 3em;
     flex-direction: column;
     align-items: center;
+  }
+
+    .footer-links {
+    align-items: center;
+    text-align: center;
+  }
+
+      .footer-contact {
+    align-items: center;
+    text-align: center;
   }
 
   .footer-actions {
