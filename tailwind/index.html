@@ -4,65 +4,64 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width,initial-scale=1">
     <title>Klivio, l'allié tailwind de votre progression</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link
-      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
-      rel="stylesheet">
-    <script src="https://cdn.tailwindcss.com"></script>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&display=swap" rel="stylesheet">
+<script src="https://cdn.tailwindcss.com"></script>
+<script src="tailwind-custom.js"></script>
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
   </head>
 
-  <body>
+  <body class="font-nunito-sans">
     <!--HEADER-->
-<header class="bg-gray-900 text-white flex items-center justify-between px-10 py-5 font-bold sticky top-0 z-50 w-full">
+<header class="bg-lavender-1000 text-white flex items-center justify-between px-10 py-5 font-bold sticky top-0 z-50 w-full">
   <button class="burger-menu inline-flex items-center p-2 md:hidden ml-auto md:ml-0" aria-label="Menu de navigation">
     <i class="fas fa-bars fa-2x"></i>
   </button>
 
   <a href="index.html" class="hidden md:block">
-    <img src="images/logo.png" alt="Logo Klivio">
+    <img src="images/kliviolight.png" alt="Logo Klivio" class="w-md h-12">
   </a>
 
-  <nav aria-label="Navigation principale" class="hidden md:flex md:items-center md:gap-6">
-    <a href="#" class="block md:inline">Les formations</a>
+  <nav aria-label="Navigation principale" class="hidden md:flex text-lavender-1000 md:items-center md:gap-6">
+    <a href="#" class="block md:inline text-white">Les formations</a>
   </nav>
 
   <form role="search" action="/search" method="get" aria-label="Recherche sur le site" class="max-lg:hidden">
-    <input type="search" name="q" placeholder="Rechercher" aria-label="Champ de recherche" class="bg-gray-900 text-gray-100 px-4 py-2 rounded-l border border-r-0 border-gray-300 focus:outline-none" />
-    <button aria-label="Rechercher" class="bg-gray-900 text-gray-100 px-4 py-2 rounded-r border border-gray-300 border-l-0 hover:bg-gray-500">
+    <input type="search" name="q" placeholder="Rechercher" aria-label="Champ de recherche" class="bg-lavender-1000 text-lavender-1000 px-4 py-2 rounded-l border border-r-0 border-lavender-300 focus:outline-none" />
+    <button aria-label="Rechercher" class="bg-lavender-1000 text-lavender-1000 px-4 py-2 rounded-r border border-lavender-300 border-l-0 hover:bg-lavender-500">
       <i class="fas fa-magnifying-glass"></i>
     </button>
   </form>
 
   <div class="hidden md:flex ml-auto md:ml-4 items-center gap-3">
-    <button class="bg-teal-300 hover:bg-teal-600 hover:text-gray-100 text-gray-900 px-4 py-2 rounded">Connexion</button>
-    <button class="bg-blue-200 text-gray-900 hover:bg-blue-600 hover:text-gray-100 px-4 py-2 rounded">Inscription</button>
+    <button class="bg-lavender-700 hover:bg-lavender-50 hover:text-lavender-950 text-white px-4 py-2 rounded">Connexion</button>
+    <button class="bg-lavender-800 text-white hover:bg-lavender-100 hover:text-lavender-950 px-4 py-2 rounded">Inscription</button>
   </div>
 </header>
 
       <!--SECTION TOP // HERO -->
-      <section class="px-10 bg-cover bg-center flex items-center justify-center text-center text-gray-100 min-h-[60vh] bg-gradient-to-r from-gray-900 to-blue-900">
-        <div class="hero-elements">
-          <h1 class="text-4xl font-extrabold mb-4 uppercase">Klivio, L'allié de votre progression</h1>
+<section class="px-10  bg-[url('images/waves.jpg')] bg-cover bg-center flex items-center justify-center text-center text-white min-h-[60vh] relative">
+        <div class="hero-elements p-10 bg-lavender-1000 bg-opacity-80 rounded-lg shadow-md ">
+          <h1 class="text-4xl font-black mb-4 uppercase shadow-lg ">Klivio, L'allié de votre progression</h1>
           <h2 class="text-2xl mb-6 font-bold uppercase">Les meilleures formations sur le développement personnel</h2>
-          <button class="bg-blue-200 text-gray-900 hover:bg-blue-600 hover:text-gray-100 px-4 py-2 rounded font-bold">En savoir plus</button>
+          <button class="bg-lavender-200 text-lavender-1000 hover:bg-lavender-700 hover:text-white px-4 py-2 rounded font-bold">En savoir plus</button>
         </div>
       </section>
 
       <!--SECTION CARTES FOND CLAIR-->
-<section class="bg-gray-100 text-gray-900 min-h-[60vh] p-10">
-  <h2 class="text-2xl font-extrabold mb-6 uppercase text-center">Les formations populaires</h2>
+<section class="bg-lavender-100 text-lavender-900 min-h-[60vh] p-10">
+  <h2 class="text-4xl font-black mb-6 uppercase text-center">Les formations populaires</h2>
 
   <div class="flex items-stretch gap-8 flex-wrap justify-center mb-6">
-    <article class="bg-white rounded-lg shadow-md p-4 w-[350px] h-[400px] flex flex-col">
-      <div class="bg-blue-200 h-40 rounded-t-lg"></div>
+    <article class="bg-lavender-50 rounded-lg shadow-md p-4 w-[350px] h-[400px] flex flex-col">
+      <div class="bg-[url('images/parler-public.jpg')] bg-cover bg-center h-40 rounded-t-lg"></div>
 
        <div class="mt-4 flex-1 flex flex-col">
         <div class="mt-4">
-        <span class="inline-flex items-center bg-green-600 text-white px-3.5 py-1.5 rounded-full text-sm font-semibold shadow whitespace-nowrap">15,99€</span>
+        <span class="inline-flex items-center bg-lavender-600 text-white px-3.5 py-1.5 rounded-full text-sm font-semibold shadow whitespace-nowrap">15,99€</span>
         <span class="ml-3 text-sm text-gray-500 line-through">60€</span>
        </div>
 
@@ -70,7 +69,7 @@
           <h3 class="text-xl font-bold pt-2">Parler en public</h3>
           <h4 class="font-semibold text-sm">Sonia Lefèvre | Coach prise de parole</h4>
 
-          <div class="text-yellow-400 mt-2">
+          <div class="text-rose-500 mt-2">
             <i class="fas fa-star"></i>
             <i class="fas fa-star"></i>
             <i class="fas fa-star"></i>
@@ -83,12 +82,12 @@
       </div>
     </article>
 
-    <article class="bg-white rounded-lg shadow-md p-4 w-[350px] h-[400px] flex flex-col">
-      <div class="bg-blue-200 h-40 rounded-t-lg"></div>
+    <article class="bg-lavender-50 rounded-lg shadow-md p-4 w-[350px] h-[400px] flex flex-col">
+      <div class="bg-[url('images/stress.jpg')] bg-cover bg-center h-40 rounded-t-lg"></div>
 
       <div class="mt-4 flex-1 flex flex-col">
         <div class="mt-4">
-        <span class="inline-flex items-center bg-green-600 text-white px-3.5 py-1.5 rounded-full text-sm font-semibold shadow whitespace-nowrap">15,99€</span>
+        <span class="inline-flex items-center bg-lavender-600 text-white px-3.5 py-1.5 rounded-full text-sm font-semibold shadow whitespace-nowrap">15,99€</span>
         <span class="ml-3 text-sm text-gray-500 line-through">60€</span>
        </div>
 
@@ -96,12 +95,12 @@
           <h3 class="text-xl font-bold pt-2">Gérer le stress</h3>
           <h4 class="font-semibold text-sm">Lucie Garnier | Formatrice</h4>
 
-          <div class="text-yellow-400 mt-2">
+          <div class="text-rose-500 mt-2">
             <i class="fas fa-star"></i>
             <i class="fas fa-star"></i>
             <i class="fas fa-star"></i>
             <i class="fas fa-star"></i>
-            <i class="fas fa-star text-yellow-600"></i>
+            <i class="fas fa-star text-rose-600"></i>
           </div>
 
           <p class="pt-2 text-sm">Apprenez à rester serein face aux défis</p>
@@ -109,12 +108,12 @@
       </div>
     </article>
 
-    <article class="bg-white rounded-lg shadow-md p-4 w-[350px] h-[400px] flex flex-col">
-      <div class="bg-blue-200 h-40 rounded-t-lg"></div>
+    <article class="bg-lavender-50 rounded-lg shadow-md p-4 w-[350px] h-[400px] flex flex-col">
+      <div class="bg-[url('images/teamwork.jpg')] bg-cover bg-center h-40 rounded-t-lg"></div>
 
       <div class="mt-4 flex-1 flex flex-col">
         <div class="mt-4">
-        <span class="inline-flex items-center bg-green-600 text-white px-3.5 py-1.5 rounded-full text-sm font-semibold shadow whitespace-nowrap">15,99€</span>
+        <span class="inline-flex items-center bg-lavender-600 text-white px-3.5 py-1.5 rounded-full text-sm font-semibold shadow whitespace-nowrap">15,99€</span>
         <span class="ml-3 text-sm text-gray-500 line-through">60€</span>
        </div>
 
@@ -122,7 +121,7 @@
           <h3 class="text-xl font-bold pt-2">Travailler en équipe</h3>
           <h4 class="font-semibold text-sm">David Moreau | Expert</h4>
 
-          <div class="text-yellow-400 mt-2">
+          <div class="text-rose-500 mt-2">
             <i class="fas fa-star"></i>
             <i class="fas fa-star"></i>
             <i class="fas fa-star"></i>
@@ -135,12 +134,12 @@
       </div>
     </article>
 
-    <article class="bg-white rounded-lg shadow-md p-4 w-[350px] h-[400px] flex flex-col">
-      <div class="bg-blue-200 h-40 rounded-t-lg"></div>
+    <article class="bg-lavender-50 rounded-lg shadow-md p-4 w-[350px] h-[400px] flex flex-col">
+      <div class="bg-[url('images/temps.jpg')] bg-cover bg-center h-40 rounded-t-lg"></div>
 
       <div class="mt-4 flex-1 flex flex-col">
         <div class="mt-4">
-        <span class="inline-flex items-center bg-green-600 text-white px-3.5 py-1.5 rounded-full text-sm font-semibold shadow whitespace-nowrap">15,99€</span>
+        <span class="inline-flex items-center bg-lavender-600 text-white px-3.5 py-1.5 rounded-full text-sm font-semibold shadow whitespace-nowrap">15,99€</span>
         <span class="ml-3 text-sm text-gray-500 line-through">60€</span>
        </div>
 
@@ -148,12 +147,12 @@
           <h3 class="text-xl font-bold pt-2">Gérer son temps</h3>
           <h4 class="font-semibold text-sm">Claire Dumas | Coach organisation</h4>
 
-          <div class="text-yellow-400 mt-2">
+          <div class="text-rose-500 mt-2">
             <i class="fas fa-star"></i>
             <i class="fas fa-star"></i>
             <i class="fas fa-star"></i>
             <i class="fas fa-star"></i>
-            <i class="fas fa-star text-yellow-600"></i>
+            <i class="fas fa-star text-rose-600"></i>
           </div>
 
           <p class="pt-2 text-sm">Optimisez vos journées et gagnez en efficacité</p>
@@ -163,33 +162,33 @@
   </div>
 
   <div class="mt-8 flex justify-center">
-    <button class="text-blue-100 bg-gray-900 hover:bg-blue-600 hover:text-gray-100 px-4 py-2 rounded font-bold">
+    <button class="text-white bg-lavender-1000 hover:bg-lavender-800 hover:text-white px-4 py-2 rounded font-bold">
       Voir plus de formations
     </button>
   </div>
 </section>
 
 <!--SECTION CARTES FOND FONCE-->
-<section class="bg-gray-900 text-white min-h-[60vh] p-10">
-  <h2 class="text-2xl font-extrabold mb-6 uppercase text-center">Les formations récentes</h2>
+<section class="bg-lavender-1000 text-white min-h-[60vh] p-10">
+  <h2 class="text-4xl font-black mb-6 uppercase text-center">Les formations récentes</h2>
 
   <div class="flex items-stretch gap-8 flex-wrap justify-center mb-6">
-    <article class="bg-gray-800 rounded-lg shadow-md p-4 w-[350px] h-[400px] flex flex-col">
-      <div class="bg-[url('images/img-course.png')] bg-cover bg-center h-40 rounded-t-lg"></div>
+    <article class="bg-lavender-900 rounded-lg shadow-md p-4 w-[350px] h-[400px] flex flex-col">
+      <div class="bg-[url('images/communication.jpg')] bg-cover bg-center h-40 rounded-t-lg"></div>
 
       <div class="mt-4 flex-1 flex flex-col">
         <div class="mt-4">
-          <span class="inline-flex items-center bg-white text-gray-900 px-3.5 py-1.5 rounded-full text-sm font-semibold shadow whitespace-nowrap">
+          <span class="inline-flex items-center bg-lavender-50 text-lavender-1000 px-3.5 py-1.5 rounded-full text-sm font-semibold shadow whitespace-nowrap">
             15,99€
           </span>
-          <span class="ml-3 text-sm text-white/70 line-through">60€</span>
+          <span class="ml-3 text-sm text-white line-through">60€</span>
         </div>
 
         <div class="flex-1">
           <h3 class="text-xl font-bold pt-2">Mieux communiquer</h3>
-          <h4 class="font-semibold text-sm text-white/90">Julien Martel | Coach en comm.</h4>
+          <h4 class="font-semibold text-sm text-white">Julien Martel | Coach en comm.</h4>
 
-          <div class="text-yellow-400 mt-2">
+          <div class="text-rose-500 mt-2">
             <i class="fas fa-star"></i>
             <i class="fas fa-star"></i>
             <i class="fas fa-star"></i>
@@ -197,27 +196,27 @@
             <i class="fas fa-star"></i>
           </div>
 
-          <p class="pt-2 text-sm text-white/90">Améliorez vos échanges et votre impact relationnel</p>
+          <p class="pt-2 text-sm text-white">Améliorez vos échanges et votre impact relationnel</p>
         </div>
       </div>
     </article>
 
-    <article class="bg-gray-800 rounded-lg shadow-md p-4 w-[350px] h-[400px] flex flex-col">
-      <div class="bg-[url('images/img-course.png')] bg-cover bg-center h-40 rounded-t-lg"></div>
+    <article class="bg-lavender-900 rounded-lg shadow-md p-4 w-[350px] h-[400px] flex flex-col">
+      <div class="bg-[url('images/emotions.jpg')] bg-cover bg-center h-40 rounded-t-lg"></div>
 
       <div class="mt-4 flex-1 flex flex-col">
         <div class="mt-4">
-          <span class="inline-flex items-center bg-white text-gray-900 px-3.5 py-1.5 rounded-full text-sm font-semibold shadow whitespace-nowrap">
+          <span class="inline-flex items-center bg-lavender-50 text-lavender-1000 px-3.5 py-1.5 rounded-full text-sm font-semibold shadow whitespace-nowrap">
             15,99€
           </span>
-          <span class="ml-3 text-sm text-white/70 line-through">60€</span>
+          <span class="ml-3 text-sm text-white line-through">60€</span>
         </div>
 
         <div class="flex-1">
           <h3 class="text-xl font-bold pt-2">Maîtriser ses émotions</h3>
-          <h4 class="font-semibold text-sm text-white/90">Amel Benali | Psy. du travail</h4>
+          <h4 class="font-semibold text-sm text-white">Amel Benali | Psy. du travail</h4>
 
-          <div class="text-yellow-400 mt-2">
+          <div class="text-rose-500 mt-2">
             <i class="fas fa-star"></i>
             <i class="fas fa-star"></i>
             <i class="fas fa-star"></i>
@@ -225,79 +224,79 @@
             <i class="fas fa-star"></i>
           </div>
 
-          <p class="pt-2 text-sm text-white/90">Développez calme et intelligence émotionnelle</p>
+          <p class="pt-2 text-sm text-white">Développez calme et intelligence émotionnelle</p>
         </div>
       </div>
     </article>
 
-    <article class="bg-gray-800 rounded-lg shadow-md p-4 w-[350px] h-[400px] flex flex-col">
-      <div class="bg-[url('images/img-course.png')] bg-cover bg-center h-40 rounded-t-lg"></div>
+    <article class="bg-lavender-900 rounded-lg shadow-md p-4 w-[350px] h-[400px] flex flex-col">
+      <div class="bg-[url('images/problemes.jpg')] bg-cover bg-center h-40 rounded-t-lg"></div>
 
       <div class="mt-4 flex-1 flex flex-col">
         <div class="mt-4">
-          <span class="inline-flex items-center bg-white text-gray-900 px-3.5 py-1.5 rounded-full text-sm font-semibold shadow whitespace-nowrap">
+          <span class="inline-flex items-center bg-lavender-50 text-lavender-1000 px-3.5 py-1.5 rounded-full text-sm font-semibold shadow whitespace-nowrap">
             15,99€
           </span>
-          <span class="ml-3 text-sm text-white/70 line-through">60€</span>
+          <span class="ml-3 text-sm text-white line-through">60€</span>
         </div>
 
         <div class="flex-1">
           <h3 class="text-xl font-bold pt-2">Résoudre les problèmes</h3>
-          <h4 class="font-semibold text-sm text-white/90">Thomas Rivière | Expert</h4>
+          <h4 class="font-semibold text-sm text-white">Thomas Rivière | Expert</h4>
 
-          <div class="text-yellow-400 mt-2">
+          <div class="text-rose-500 mt-2">
             <i class="fas fa-star"></i>
             <i class="fas fa-star"></i>
             <i class="fas fa-star"></i>
             <i class="fas fa-star"></i>
-            <i class="fas fa-star text-yellow-600"></i>
+            <i class="fas fa-star text-rose-600"></i>
           </div>
 
-          <p class="pt-2 text-sm text-white/90">Analysez, décidez et trouvez des solutions durables</p>
+          <p class="pt-2 text-sm text-white">Analysez, décidez et trouvez des solutions durables</p>
         </div>
       </div>
     </article>
 
-    <article class="bg-gray-800 rounded-lg shadow-md p-4 w-[350px] h-[400px] flex flex-col">
-      <div class="bg-[url('images/img-course.png')] bg-cover bg-center h-40 rounded-t-lg"></div>
+    <article class="bg-lavender-900 rounded-lg shadow-md p-4 w-[350px] h-[400px] flex flex-col">
+      <div class="bg-[url('images/leadership.jpg')] bg-cover bg-center  h-40 rounded-t-lg"></div>
 
       <div class="mt-4 flex-1 flex flex-col">
         <div class="mt-4">
-          <span class="inline-flex items-center bg-white text-gray-900 px-3.5 py-1.5 rounded-full text-sm font-semibold shadow whitespace-nowrap">
+          <span class="inline-flex items-center bg-lavender-50 text-lavender-1000 px-3.5 py-1.5 rounded-full text-sm font-semibold shadow whitespace-nowrap">
             15,99€
           </span>
-          <span class="ml-3 text-sm text-white/70 line-through">60€</span>
+          <span class="ml-3 text-sm text-white line-through">60€</span>
         </div>
 
         <div class="flex-1">
           <h3 class="text-xl font-bold pt-2">Leadership positif</h3>
-          <h4 class="font-semibold text-sm text-white/90">Marc Nguyen | Consultant</h4>
+          <h4 class="font-semibold text-sm text-white">Marc Nguyen | Consultant</h4>
 
-          <div class="text-yellow-400 mt-2">
+          <div class="text-rose-500 mt-2">
             <i class="fas fa-star"></i>
             <i class="fas fa-star"></i>
             <i class="fas fa-star"></i>
             <i class="fas fa-star"></i>
-            <i class="fas fa-star text-yellow-600"></i>
+            <i class="fas fa-star text-rose-600"></i>
           </div>
 
-          <p class="pt-2 text-sm text-white/90">Inspirez, motivez et fédérez votre équipe</p>
+          <p class="pt-2 text-sm text-white">Inspirez, motivez et fédérez votre équipe</p>
         </div>
       </div>
     </article>
   </div>
 
   <div class="mt-8 flex justify-center">
-    <button class="bg-indigo-100 text-gray-900 hover:bg-green-400 px-6 py-2 rounded font-bold">
+    <button class="bg-lavender-50 text-lavender-1000 hover:bg-lavender-800 hover:text-white px-6 py-2 rounded font-bold">
       Voir plus de formations
     </button>
   </div>
 </section>
 
       <!--SECTION TESTIMONIALS-->
-      <section class="bg-gray-100 text-gray-900 min-h-[45vh] p-10 items-center justify-center flex">
+      <section class="bg-lavender-50 text-lavender-1000 min-h-[45vh] p-10 items-center justify-center flex">
         <div>
-          <h2 class="text-2xl font-extrabold mb-6 uppercase text-center pb-10">Avis clients</h2>
+          <h2 class="text-4xl font-black mb-6 uppercase text-center pb-10">Avis clients</h2>
 
           <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
             <div class="bg-white rounded-lg shadow-md p-6">
@@ -307,7 +306,7 @@
                 </div>
                 <div class="flex-1">
                   <h3 class="font-bold text-lg">Juliette</h3>
-                  <div class="text-yellow-400 mt-2">
+                  <div class="text-rose-500 mt-2">
                     <i class="fas fa-star"></i>
                     <i class="fas fa-star"></i>
                     <i class="fas fa-star"></i>
@@ -332,7 +331,7 @@
                 </div>
                 <div class="flex-1">
                   <h3 class="font-bold text-lg">Camille</h3>
-                  <div class="text-yellow-400 mt-2">
+                  <div class="text-rose-500 mt-2">
                     <i class="fas fa-star"></i>
                     <i class="fas fa-star"></i>
                     <i class="fas fa-star"></i>
@@ -352,42 +351,59 @@
       </section>
 
       <!--SECTION AVANTAGES-->
-      <section class="bg-blue-100 text-gray-900 min-h-[60vh] p-10 items-center justify-center flex ">
+      <section class="bg-lavender-100 text-lavender-1000 min-h-[60vh] p-10 items-center justify-center flex ">
         <div class="w-full flex flex-col md:flex-row gap-10 items-center justify-center">
           <div>
-            <h2 class="text-2xl font-extrabold mb-6 uppercase pl-2 pb-10">Les avantages Klivio</h2>
+            <h2 class="text-4xl font-black mb-6 uppercase pl-2 pb-10">Les avantages Klivio</h2>
             <ul>
                 <li class="flex items-center gap-4 mb-5">
                 <img
-                  src="images/arrow-up-right.png"
-                  alt="flèche vers le haut"
+                  src="images/arrow-right-solid.svg"
+                  alt="flèche vers la droite"
+                  class="w-6 h-6"
                 ><p>Suivi de sa progression</p>
                 </li>
               <li class="flex items-center gap-4 mb-5">
-                <img src="images/pen.png" alt="stylo"><p
+                <img
+                  src="images/arrow-right-solid.svg"
+                  alt="flèche vers la droite"
+                  class="w-6 h-6"><p
                   >Exercices et QCM pour la mise en pratique</p
                 >
               </li>
               <li class="flex items-center gap-4 mb-5">
                 <img
-                  src="images/arrow-down.png"
-                  alt="flèche vers le bas"
+                  src="images/arrow-right-solid.svg"
+                  alt="flèche vers la droite"
+                  class="w-6 h-6"
                 ><p
                   >Possibilité de télécharger/imprimer les formations</p
                 >
               </li>
               <li class="flex items-center gap-4 mb-5">
-                <img src="images/star-contour.png" alt="étoile"><p
+                <img
+                  src="images/arrow-right-solid.svg"
+                  alt="flèche vers la droite"
+                  class="w-6 h-6"
+                ><p
                   >Contenu qualitatif et vérifié</p
                 >
               </li>
               <li class="flex items-center gap-4 mb-5">
-                <img src="images/clock-backward.png" alt="Horloge"><p
+                <img
+                  src="images/arrow-right-solid.svg"
+                  alt="flèche vers la droite"
+                  class="w-6 h-6"
+                ><p
                   >Suivi en autonomie, 24h/24, 7j/7</p
                 >
               </li>
               <li class="flex items-center gap-4 mb-5">
-                <img src="images/annotation.png" alt="annotation"><p
+                <img
+                  src="images/arrow-right-solid.svg"
+                  alt="flèche vers la droite"
+                  class="w-6 h-6"
+                ><p
                   >Espaces d'échanges dédiés pour poser ses questions sur les
                   formations</p
                 >
@@ -396,41 +412,55 @@
           </div>
           <div class="aw-full flex flex-col md:flex-row gap-10 items-center justify-center">
             <img
-              src="images/avantages.png"
-              alt="femme souriante devant un ordinateur portable"
+              src="images/ordinateur-portable.jpg"
+              alt="ordinateur portable devant des notes adhésives collées sur un mur"
+              class="max-w-md rounded-lg shadow-md"
             >
           </div>
         </div>
       </section>
 
       <!--SECTION FORMATIONS-->
-      <section class="bg-gray-900 text-gray-100 min-h-[60vh] p-10 items-center justify-center flex">
+      <section class="bg-lavender-1000 text-white min-h-[60vh] p-10 items-center justify-center flex">
         <div class="w-full flex flex-col md:flex-row gap-10 items-center justify-center flex-col-reverse">
                       <h2 class="hidden">Créez vos formations</h2>
           <div class="">
-            <img src="images/become-author.png" alt="Bureau vu de haut">
+            <img src="images/femme-pointing.jpg" alt="femme entourée de mains pensant à un pense-bête avec des notes adhésives vides" class="max-w-xs rounded-lg shadow-md">
           </div>
           <div class="w-full md:w-1/2">
-            <h2 class="text-2xl font-extrabold mb-6 uppercase pl-2 pb-10">Créez vos formations avec Klivio</h2>
+            <h2 class="text-2xl font-black mb-6 uppercase pl-2 pb-10">Créez vos formations avec Klivio</h2>
             <ul class="advantages-list">
               <li class="flex items-center gap-4 mb-5">
                 <img
-                  src="images/coin-hand.png"
-                  alt="argent dans une main"
+                  src="images/arrow-right-solid-light.svg"
+                  alt="flèche vers la droite"
+                  class="w-6 h-6"
                 ><p>Commission unique, au pourcentage sur les ventes</p>
               </li>
               <li class="flex items-center gap-4 mb-5">
-                <img src="images/heart.png" alt="cœur"><p
+                <img
+                  src="images/arrow-right-solid-light.svg"
+                  alt="flèche vers la droite"
+                  class="w-6 h-6"
+                ><p
                   >Mise en avant sur la plateforme</p
                 >
               </li>
               <li class="flex items-center gap-4 mb-5">
-                <img src="images/pencil-01.png" alt="crayon"><p
+                <img
+                  src="images/arrow-right-solid-light.svg"
+                  alt="flèche vers la droite"
+                  class="w-6 h-6"
+                 ><p
                   >Contrôle total sur le cours : contenu, prix</p
                 >
               </li>
               <li class="flex items-center gap-4 mb-5">
-                <img src="images/settings.png" alt="Paramètres"><p
+                <img
+                  src="images/arrow-right-solid-light.svg"
+                  alt="flèche vers la droite"
+                  class="w-6 h-6"
+                 ><p
                   >Fonctionnalités avancées : espace commentaires, possibilité
                   de créer des QCM, exercices, vidéos, téléchargement en PDF,
                   suivi des statistiques des ventes, gestion de codes promos,
@@ -438,7 +468,11 @@
                 >
               </li>
               <li class="flex items-center gap-4 mb-5">
-                <img src="images/user-profile-square.png" alt="étoile"><p
+                <img
+                  src="images/arrow-right-solid-light.svg"
+                  alt="flèche vers la droite"
+                  class="w-6 h-6"
+                ><p
                   >Le professeur reste 100% propriétaire de sa formation et
                   conserve tous ses droits d’auteur</p
                 >
@@ -449,10 +483,10 @@
       </section>
 
       <!--SECTION A PROPOS-->
-      <section class="bg-gray-100 text-gray-900 min-h-[60vh] p-10 items-center justify-center flex">
+      <section class="bg-gradient-to-b from-white to-lavender-100 min-h-[60vh] p-10 items-center justify-center flex">
         <div class="w-full flex flex-col md:flex-row gap-10 items-center justify-center">
           <div class="">
-            <h2 class="text-2xl font-extrabold mb-6 uppercase pl-2 pb-10">À propos de Klivio</h2>
+            <h2 class="text-4xl font-black mb-6 uppercase pl-2 pb-10">À propos de Klivio</h2>
             <p>
               Chez Klivio, nous défendons des valeurs fondamentales qui
               définissent notre approche éducative. Nous nous engageons à
@@ -468,30 +502,30 @@
             </p>
           </div>
 
-          <div class="min-w-[30vw] bg-gray-900 text-gray-100 p-20 rounded-lg shadow-md">
+          <div class="min-w-[30vw] bg-lavender-1000 text-white p-10 rounded-lg shadow-md">
             <div class="flex justify-center">
-              <img src="images/big-logo.png" alt="logo Klivio">
+                 <img src="images/kliviolight.png" alt="Logo Klivio" class="h-24 max-w-full object-contain">
             </div>
           </div>
         </div>
       </section>
 
       <!--SECTION CONTACT-->
-      <section class="bg-gray-900 text-gray-100 min-h-[60vh] p-10 items-center justify-center flex">
+      <section class="border-t-8 border-double border-lavender-700 bg-gradient-to-b from-lavender-100 to-lavender-200 min-h-[60vh] p-10 items-center justify-center flex">
         <div class="p-10 items-center justify-center">
-          <h2 class="text-2xl font-extrabold mb-6 uppercase pl-2 pb-10 items-center justify-center flex">Nous contacter</h2>
-          <hr class="mb-10 items-center justify-center">
+          <h2 class="text-4xl font-black mb-6 uppercase pl-2 pb-10 items-center justify-center flex">Nous contacter</h2>
+          <hr class="border-t-8 border-double border-lavender-700 mb-10 items-center justify-center">
 
-          <div class="flex flex-col md:flex-row gap-4 mb-6 text-gray-900">
-            <input class="p-2 rounded focus:outline-none" type="text" name="name" placeholder="Nom" aria-label="Nom" >
-            <input class=" p-2 rounded focus:outline-none"
+          <div class="flex flex-col md:flex-row gap-4 mb-6 text-lavender-1000">
+            <input class="p-2 rounded bg-lavender-50 focus:outline-none shadow-inner" type="text" name="name" placeholder="Nom" aria-label="Nom" >
+            <input class=" p-2 rounded bg-lavender-50 focus:outline-none shadow-inner"
               type="email"
               name="email"
               placeholder="Email"
               aria-label="Email"
             >
           </div>
-          <textarea class="w-full p-2 rounded mb-6 text-gray-900 focus:outline-none"
+          <textarea class="w-full p-2 rounded mb-6 text-lavender-1000 bg-lavender-50 shadow-inner focus:outline-none"
             rows="4"
             name="message"
             placeholder="votre message"
@@ -499,18 +533,18 @@
           ></textarea>
 
           <div class="flex justify-center">
-            <button class="bg-indigo-100 text-gray-900 hover:bg-green-400 px-6 py-2 rounded font-bold" type="submit">Envoyer</button>
+            <button class="bg-lavender-100 text-lavender-1000 hover:bg-lavender-400 hover:text-white px-6 py-2 rounded font-bold" type="submit">Envoyer</button>
           </div>
         </div>
       </section>
     </main>
 
     <!--FOOTER-->
-    <footer class="border-t-8 border-indigo-300 px-10 py-10 bg-gray-900 text-gray-100">
-      <div class="text-gray-100">
+    <footer class="border-t-8 border-lavender-700 px-10 py-10 bg-lavender-1000 text-white">
+      <div class="text-white">
         <div class="flex flex-col md:flex-row items-center justify-between mb-10">
           <div class="">
-            <img src="images/logo-footer.png" alt="Logo footer Klivio">
+            <img src="images/kliviolight.png" alt="Logo footer Klivio" class="h-20 mb-6">
           </div>
 
           <div class="flex gap-20 mb-10 md:mb-0">
@@ -532,7 +566,7 @@
               </p>
               <p class="flex items-center gap-4 mb-2">
                 <img src="images/phone.png" alt="icone téléphone">
-                <span><a href="tel:0102030406">01.02.03.04.06</a></span>
+                <span><a href="tel:0102030406">01.02.03.04.0</a></span>
               </p>
               <p class="flex items-center gap-4 mb-2">
                 <img src="images/mail.png" alt="icone mail"><span
@@ -545,13 +579,13 @@
           </div>
 
           <div class="flex items-center justify-center gap-1">
-            <button class="bg-gray-900 text-gray-100 px-4 py-2 rounded-l border-2 border-gray-200 hover:bg-cyan-900 hover:text-gray-100">Connexion</button>
-            <button class="bg-gray-900 text-gray-100 px-4 py-2 rounded-r border-2 border-gray-200 hover:bg-purple-900 hover:text-gray-100">Inscription</button>
+            <button class="bg-lavender-1000 text-white px-4 py-2 rounded-l border-2 border-lavender-200 hover:bg-lavender-900 hover:text-white">Connexion</button>
+            <button class="bg-lavender-1000 text-white px-4 py-2 rounded-r border-2 border-lavender-200 hover:bg-lavender-800 hover:text-white">Inscription</button>
           </div>
         </div>
       </div>
 
-      <hr class="mb-10 items-center justify-center">
+      <hr class="border-t-8 border-double border-lavender-200 mb-10 items-center justify-center">
 
       <div class="flex items-center justify-between">
         <div class="max-md:hidden">
