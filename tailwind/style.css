@@ -1,0 +1,18 @@
+@import "tailwindcss";
+
+@theme {
+  --font-nunito-sans: "Nunito Sans", sans-serif;
+
+  --color-lavender-50: #f5f0f5;
+  --color-lavender-100: #ebe0eb;
+  --color-lavender-200: #d6c1d7;
+  --color-lavender-300: #c2a2c3;
+  --color-lavender-400: #ae84ae;
+  --color-lavender-500: #99659a;
+  --color-lavender-600: #7b517b;
+  --color-lavender-700: #5c3c5d;
+  --color-lavender-800: #3d283e;
+  --color-lavender-900: #1f141f;
+  --color-lavender-950: #150e16;
+  --color-lavender-1000: #0a070a;
+}

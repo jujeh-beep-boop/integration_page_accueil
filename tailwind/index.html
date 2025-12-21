@@ -1,18 +1,16 @@
-<!DOCTYPE html>
-<html lang="fr">
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width,initial-scale=1">
-    <title>Klivio, l'allié tailwind de votre progression</title>
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&display=swap" rel="stylesheet">
-<script src="https://cdn.tailwindcss.com"></script>
-<script src="tailwind-custom.js"></script>
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-  </head>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Klivio, l'allié tailwind de votre progression</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="dist.css">
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
 
   <body class="font-nunito-sans">
     <!--HEADER-->
@@ -22,19 +20,25 @@
   </button>
 
   <a href="index.html" class="hidden md:block">
-    <img src="images/kliviolight.png" alt="Logo Klivio" class="w-md h-12">
+    <img src="images/kliviolight.png" alt="Logo Klivio" class="w-32 h-12">
   </a>
 
   <nav aria-label="Navigation principale" class="hidden md:flex text-lavender-1000 md:items-center md:gap-6">
     <a href="#" class="block md:inline text-white">Les formations</a>
   </nav>
 
-  <form role="search" action="/search" method="get" aria-label="Recherche sur le site" class="max-lg:hidden">
-    <input type="search" name="q" placeholder="Rechercher" aria-label="Champ de recherche" class="bg-lavender-1000 text-lavender-1000 px-4 py-2 rounded-l border border-r-0 border-lavender-300 focus:outline-none">
-    <button aria-label="Rechercher" class="bg-lavender-1000 text-lavender-1000 px-4 py-2 rounded-r border border-lavender-300 border-l-0 hover:bg-lavender-500">
-      <i class="fas fa-magnifying-glass text-white"></i>
+<form role="search" action="/search" method="get" aria-label="Recherche sur le site" 
+      class="max-lg:hidden flex items-stretch h-10"> <input type="search" 
+           name="q" 
+           placeholder="Rechercher" 
+           aria-label="Champ de recherche" 
+           class="bg-lavender-1000 text-white placeholder:text-lavender-300 px-4 rounded-l border border-r-0 border-lavender-300 focus:outline-none focus:border-lavender-500 w-64">
+    
+    <button aria-label="Rechercher" 
+            class="bg-lavender-1000 text-white px-4 flex items-center justify-center rounded-r border border-lavender-300 border-l-0 hover:bg-lavender-500 transition-colors">
+      <i class="fas fa-magnifying-glass"></i>
     </button>
-  </form>
+</form>
 
   <div class="hidden md:flex ml-auto md:ml-4 items-center gap-3">
     <button class="bg-lavender-700 hover:bg-lavender-50 hover:text-lavender-950 text-white px-4 py-2 rounded">Connexion</button>
